@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>string</title>
 </head>
 <body>
     
     <script>
+        /* Never mixed "" and '' in the same document */
+        let str = "Hello "; // acceptable
+        let str1 = 'Hello '; // acceptable
+
+        let str2 = "World!";
+        let str3 = str + str2; // strings concatenation
+        console.log(str3); // Hello World!
         
+        strLen = str3.length; // string length
+        console.log(strLen); // 12
+
+        let firstSign = str3[0];
+        console.log(firstSign); // H
+
+        let lastSign = str3[str3.length - 1];
+        console.log(lastSign); // !
+
+        let unicode = "ąęćóśłńżź 🔥 ⚡";
+        console.log(unicode); // ąęćóśłńżź 🔥 ⚡
     </script>
 </body>
 </html>
